@@ -1,2 +1,3 @@
-# CYC_Frontend
-Carry Your Calorie Frontend Code.
+# CYC Frontend
+
+Basic CYC Structure

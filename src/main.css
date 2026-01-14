@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --font-sans: Arial, Helvetica, sans-serif;
+
+        --container-max-width-sm: 640px;
+        --container-max-width-md: 768px;
+        --container-max-width-lg: 1024px;
+        --container-max-width-xl: 1280px;
+        --container-max-width-2xl: 1400px;
+        --container-padding: 2rem;
+
+        /* Button background colors */
+        --button-white-bg: #ffffff;
+        --button-white-bg-hover: #f8f9fa;
+
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+
+        --border: 0 0% 89.8%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        --ring: 0 0% 3.9%;
+        --input: 0 0% 89.8%;
+    }
+
+    .border-custom {
+        border-color: hsl(var(--border));
+    }
+
+    .login-button-hover:hover {
+        background-color: #1a5e63 !important;
+        color: white !important;
+    }
+
+    .order-button-hover:hover {
+        background-color: #164549 !important;
+        color: white !important;
+    }
+
+    .invalid-input {
+        border-color: #ff0000 !important;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5) !important;
+    }
+
+    .my-container {
+        margin-left: auto;
+        /* Center horizontally */
+        margin-right: auto;
+        /* Center horizontally */
+        padding-left: var(--container-padding);
+        /* Apply padding */
+        padding-right: var(--container-padding);
+        /* Apply padding */
+
+        @media (min-width: 640px) {
+            max-width: var(--container-max-width-sm);
+        }
+
+        @media (min-width: 768px) {
+            max-width: var(--container-max-width-md);
+        }
+
+        @media (min-width: 1024px) {
+            max-width: var(--container-max-width-lg);
+        }
+
+        @media (min-width: 1280px) {
+            max-width: var(--container-max-width-xl);
+        }
+
+        @media (min-width: 1400px) {
+            /* Your custom 2xl breakpoint */
+            max-width: var(--container-max-width-2xl);
+        }
+    }
+}
